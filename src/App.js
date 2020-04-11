@@ -4,6 +4,7 @@ import profile from './assets/images/profile.png';
 import bell from './assets/images/bell.png';
 import newsfeed from './assets/images/newsfeed.png';
 import message from './assets/images/message.png';
+import Navbar from './components/Navbar';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,8 @@ const App = () => {
 
   return (
     <div className="w-full">
-      <div className="bg-light-100 flex flex-wrap">
+      <Navbar />
+      {/* <div className="bg-light-100 flex flex-wrap">
         <nav className="flex items-center justify-between flex-wrap p-6 fixed w-full z-10 top-0w-1/2 bg-light-100">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
             <a className="text-white" href="/">
@@ -125,7 +127,7 @@ const App = () => {
             </ul>
           </div>
         </nav>
-      </div>
+      </div> */}
 
       <div className="container w-full mt-32 mx-auto ">
         <div className="text-center">

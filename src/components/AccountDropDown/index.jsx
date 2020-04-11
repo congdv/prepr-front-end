@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 
 const AccountDropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleEscape = (event) => {
+    if (event.key === 'Esc' || event.key === 'Escape') {
+      setIsOpen(false);
+    }
+  };
+
+  document.addEventListener('keydown', handleEscape);
   return (
     <div className="relative ml-6 sm:mt-1">
       <button
